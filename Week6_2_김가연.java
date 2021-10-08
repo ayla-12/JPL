@@ -14,6 +14,8 @@ class Car{ // 부모 클래스 Car를 만들어줍니다.
 		this.reqPerson = reqPerson;
 	}
 	// 메서드 선언
+	// 게터와 세터 선언하기!
+	// 게터
 	String getEmgType() { // private 변수에 접근하기 위해 get 메서드를 만들어 접근을 할 수 있도록 합니다.
 		return emgType;	}
 	int getNumber() {
@@ -24,6 +26,15 @@ class Car{ // 부모 클래스 Car를 만들어줍니다.
 		return reqPerson;	}
 	String getStr() {
 		return getEmgType() + getNumber() + getCarType() + getReqPerson();	}
+	// 세터 (현재 여기서는 쓰지는 않음)
+	void setEmgType(String emgType) {
+		this.emgType = emgType;	}
+	void setNumber(int number) {
+		this.number = number;	}
+	void setCarType(String carType) {
+		this.carType = carType;	}
+	void setReqPerson(String reqPerson) {
+		this.reqPerson = reqPerson;	}
 }
 // 자식 클래스 만들기
 class FireEngine extends Car{ // Car의 자식 클래스인 FireEngine을 만들어줍니다.
