@@ -24,7 +24,7 @@ class Game{
 			System.out.println("가위(1) 바위(2) 보(3)");
 			userInput = sc.nextInt(); // userInput 변수에 스캐너를 통해 입력받습니다.
 			
-			if (userInput > 3) // 만약 3보다 큰 값을 받게 되면,
+			if (userInput > 3 || userInput < 1) // 만약 잘못된 값을 받게되면,
 				throw new Exception("범위가 잘못되었습니다."); // 에러를 발생시키고 메시지를 써줍니다.
 			
 			//에러가 발생하지 않으면 아래의 코드를 실행합니다.
